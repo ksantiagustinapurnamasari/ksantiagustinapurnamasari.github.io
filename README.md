@@ -9,10 +9,10 @@ Alamat tujuan: https://ksantiagustinapurnamasari.github.io/
 1. Masuk ke akun GitHub `ksantiagustinapurnamasari`.
 2. Buat repositori **Public** dengan nama persis `ksantiagustinapurnamasari.github.io`.
 3. Unggah isi paket: `index.html`, `styles.css`, `theme.css`, `script.js`, `.nojekyll`, dan folder `assets` ke direktori utama repositori. Jangan mengunggah file ZIP atau folder pembungkusnya.
-4. Buka **Settings → Pages**. Pada **Build and deployment**, pilih **Deploy from a branch**, lalu **main** dan **/ (root)**, kemudian **Save**.
+4. Repositori ini memakai workflow publikasi di `.github/workflows/deploy.yml`. Buka **Settings → Pages**, lalu pilih **GitHub Actions** sebagai sumber penerbitan.
 5. Tunggu penerbitan selesai. Statusnya dapat dilihat di **Actions** atau **Settings → Pages**.
 
-Tidak memerlukan Node.js, instalasi paket, atau proses build. Untuk melihat secara lokal, buka `index.html` di browser.
+Setiap perubahan yang diunggah ke cabang `main` akan diterbitkan otomatis. Tidak memerlukan Node.js atau instalasi paket. Untuk melihat secara lokal, buka `index.html` di browser.
 
 ## Mengubah isi
 
