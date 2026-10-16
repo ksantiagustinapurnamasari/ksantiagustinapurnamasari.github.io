@@ -18,14 +18,22 @@ document.addEventListener('keydown', event => {
   }
 });
 document.getElementById('year').textContent = new Date().getFullYear();
-const links = [...nav.querySelectorAll('a')];
-const observer = new IntersectionObserver(entries => {
-  for (const entry of entries) {
-    if (!entry.isIntersecting) continue;
-    links.forEach(link => {
-      if (link.hash === `#${entry.target.id}`) link.setAttribute('aria-current', 'location');
-      else link.removeAttribute('aria-current');
-    });
+
+// Keep bookmarks from the original single-page website working.
+const legacyPages = new Map([
+  ['#profil', 'profil.html'],
+  ['#tentang', 'tentang.html'],
+  ['#pendidikan', 'pendidikan.html'],
+  ['#kontak', 'kontak.html'],
+]);
+function redirectLegacyLink() {
+  const isHome = window.location.pathname.endsWith('/') || window.location.pathname.endsWith('/index.html');
+  const destination = legacyPages.get(window.location.hash);
+  if (isHome && destination) {
+    const url = new URL(destination, window.location.href);
+    url.search = window.location.search;
+    window.location.replace(url.href);
   }
-}, { rootMargin: '-20% 0px -55% 0px' });
-document.querySelectorAll('main section[id]').forEach(section => observer.observe(section));
+}
+redirectLegacyLink();
+window.addEventListener('hashchange', redirectLegacyLink);
