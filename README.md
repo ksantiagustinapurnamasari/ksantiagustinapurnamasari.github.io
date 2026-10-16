@@ -33,6 +33,6 @@ Setiap perubahan yang diunggah ke cabang `main` akan diterbitkan otomatis. Tidak
 - Tautan kontak: `kontak.html`.
 - Warna dan penyesuaian tampilan: `theme.css`.
 - Menu navigasi ponsel: `script.js`.
-- Foto profil berada di `assets/foto-profil.jpeg` dan tampil di Beranda serta halaman Profil.
+- Foto profil berada di `assets/foto-profil.jpeg` dan tampil di Beranda, Profil, Tentang, serta di sebelah nama pada menu.
 
 Font DM Sans disertakan secara lokal dengan lisensi SIL Open Font License di `assets/OFL.txt`.

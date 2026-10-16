@@ -52,6 +52,7 @@ h1 { font-weight:600; font-size:clamp(36px,4.2vw,56px); letter-spacing:-.045em; 
 .section-intro { color:var(--muted); font-size:15px; margin-top:18px; max-width:310px; }
 .about-copy { max-width:none; padding:28px; border:1px solid var(--line); border-radius:12px; background:#f7f9fc; line-height:1.85; }
 .about-copy p:last-of-type { margin-bottom:16px; }
+.about-actions { display:flex; flex-wrap:wrap; align-items:center; gap:12px 20px; margin-top:24px; }
 .education { background:transparent; padding-inline:0; }
 .education-head { margin-bottom:32px; }
 .education-head p { max-width:640px; margin-top:16px; }
