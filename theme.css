@@ -23,6 +23,21 @@ h1 { font-weight:600; font-size:clamp(40px,4.4vw,63px); letter-spacing:-.05em; m
 .card-note { font-size:9px; letter-spacing:.13em; color:var(--muted); }
 .quote-mark { font-family:var(--sans); font-size:22px; }
 .section { padding-block:80px; }
+.profile { border-top:1px solid var(--line); }
+.profile-grid { display:grid; grid-template-columns:.85fr 1.15fr; align-items:start; gap:65px; }
+.profile h2 { font-weight:600; font-size:clamp(32px,3.3vw,44px); line-height:1.12; letter-spacing:-.04em; color:var(--navy); margin:0; }
+.profile-intro p { max-width:310px; color:var(--muted); font-size:15px; margin:18px 0 0; }
+.profile-card { min-width:0; border:1px solid var(--line); border-radius:12px; background:#fff; padding:28px; }
+.profile-card-head { display:flex; align-items:center; justify-content:space-between; gap:16px; padding-bottom:22px; border-bottom:1px solid var(--line); }
+.profile-card-label { display:block; color:var(--muted); font-size:9px; letter-spacing:.13em; }
+.profile-card-head strong { display:block; font-size:22px; font-weight:600; color:var(--navy); margin-top:3px; }
+.profile-badge { display:inline-flex; align-items:center; gap:7px; padding:5px 11px; border-radius:20px; background:#edf2fb; color:var(--navy2); font-size:11px; font-weight:600; }
+.profile-badge i { width:6px; height:6px; border-radius:50%; background:currentColor; }
+.profile-details { margin:0; }
+.profile-details>div { padding:16px 0; border-bottom:1px solid var(--line); }
+.profile-details>div:last-child { padding-bottom:0; border-bottom:0; }
+.profile-details dt { font-size:12px; color:var(--muted); }
+.profile-details dd { margin:4px 0 0; font-size:15px; font-weight:500; color:var(--navy); overflow-wrap:anywhere; }
 .about-grid { grid-template-columns:.85fr 1.15fr; gap:65px; }
 .about h2,.education h2 { font-weight:600; font-size:clamp(32px,3.3vw,44px); }
 .section-intro { color:var(--muted); font-size:15px; margin-top:18px; max-width:310px; }
@@ -57,6 +72,9 @@ h1 { font-weight:600; font-size:clamp(40px,4.4vw,63px); letter-spacing:-.05em; m
   .hero-actions { margin:22px 0 30px; }
   .section { padding-block:50px; }
   .about-grid { grid-template-columns:1fr; gap:24px; }
+  .profile-grid { grid-template-columns:1fr; gap:24px; }
+  .profile-card { padding:22px; }
+  .profile-details dd { font-size:14px; }
   .profile-facts>div { grid-template-columns:110px minmax(0,1fr); gap:12px; }
   .profile-facts dd { font-size:14px; }
   .contact-card { padding:30px 22px; }
