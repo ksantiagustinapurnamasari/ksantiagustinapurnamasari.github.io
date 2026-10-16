@@ -33,6 +33,6 @@ Setiap perubahan yang diunggah ke cabang `main` akan diterbitkan otomatis. Tidak
 - Tautan kontak: `kontak.html`.
 - Warna dan penyesuaian tampilan: `theme.css`.
 - Menu navigasi ponsel: `script.js`.
-- Area visual di beranda menggunakan inisial KAP. Untuk memakai foto, ganti elemen `.monogram` di `index.html` dengan `<img src="assets/foto-saya.jpg" alt="Foto Ksanti Agustina Purnamasari">`, lalu simpan foto di folder `assets`.
+- Foto profil berada di `assets/foto-profil.jpeg` dan tampil di Beranda serta halaman Profil.
 
 Font DM Sans disertakan secara lokal dengan lisensi SIL Open Font License di `assets/OFL.txt`.
