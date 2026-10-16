@@ -11,6 +11,14 @@ menu.addEventListener('click', () => {
   menu.setAttribute('aria-label', open ? 'Tutup menu' : 'Buka menu');
 });
 nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+
+document.addEventListener('click', event => {
+  if (!nav.contains(event.target) && !menu.contains(event.target)) closeMenu();
+});
+document.addEventListener('focusin', event => {
+  if (!nav.contains(event.target) && !menu.contains(event.target)) closeMenu();
+});
+window.matchMedia('(max-width:900px)').addEventListener('change', closeMenu);
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && nav.classList.contains('open')) {
     closeMenu();
