@@ -27,7 +27,7 @@ jobs:
       - name: Prepare website files
         run: |
           mkdir -p _site
-          cp index.html profil.html tentang.html pendidikan.html kontak.html styles.css theme.css script.js .nojekyll _site/
+          cp index.html profil.html tentang.html pendidikan.html galeri.html kontak.html styles.css theme.css script.js .nojekyll _site/
           cp -R assets _site/assets
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
