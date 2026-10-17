@@ -19,7 +19,7 @@ h1 { font-weight:600; font-size:clamp(36px,4.2vw,56px); letter-spacing:-.045em; 
 .quick-facts strong { line-height:1.6; }
 .hero-visual { min-height:auto; display:block; max-width:320px; width:100%; justify-self:end; }
 .portrait-card { width:100%; margin:0; border-radius:12px 12px 0 0; background:#142540; box-shadow:none; overflow:hidden; padding:0; }
-.portrait-wrap { background:#edf2fb; aspect-ratio:3/4; overflow:hidden; }
+.portrait-wrap { background:#edf2fb; aspect-ratio:4/5; overflow:hidden; }
 .portrait-wrap .portrait-photo { width:100%; height:100%; display:block; object-fit:cover; filter:none; }
 .portrait-caption { padding:0 20px; font-size:12px; }
 .pin { color:#a8c7ff; }
@@ -32,7 +32,7 @@ h1 { font-weight:600; font-size:clamp(36px,4.2vw,56px); letter-spacing:-.045em; 
 .profile h1 { font-weight:600; font-size:clamp(32px,3.3vw,44px); line-height:1.12; letter-spacing:-.04em; color:var(--navy); margin:0; }
 .profile-intro p { max-width:310px; color:var(--muted); font-size:15px; margin:18px 0 0; }
 .profile-card { min-width:0; border:1px solid var(--line); border-radius:12px; background:#fff; padding:28px; }
-.profile-photo { display:block; width:min(100%,220px); height:auto; aspect-ratio:3/4; border-radius:12px; margin-top:24px; }
+.profile-photo { display:block; width:min(100%,220px); height:auto; aspect-ratio:4/5; object-fit:cover; object-position:center top; border-radius:12px; margin-top:24px; }
 .profile-card-head { display:flex; align-items:center; justify-content:space-between; gap:16px; padding-bottom:22px; border-bottom:1px solid var(--line); }
 .profile-card-label { display:block; color:var(--muted); font-size:9px; letter-spacing:.13em; }
 .profile-card-head strong { display:block; font-size:22px; font-weight:600; color:var(--navy); margin-top:3px; }
