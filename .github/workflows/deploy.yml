@@ -28,7 +28,8 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html profil.html tentang.html pendidikan.html galeri.html kontak.html styles.css theme.css script.js .nojekyll _site/
-          cp -R assets _site/assets
+          mkdir -p _site/assets
+          cp assets/OFL.txt assets/dm-sans.woff2 assets/favicon.svg assets/foto-profil.jpeg assets/foto-profil.webp assets/foto-profil-320.webp assets/foto-profil-480.webp assets/foto-profil-768.webp assets/galeri-beranda.png assets/galeri-beranda.webp assets/galeri-beranda-480.webp assets/galeri-beranda-800.webp assets/galeri-pendidikan.png assets/galeri-pendidikan.webp assets/galeri-pendidikan-480.webp assets/galeri-pendidikan-800.webp _site/assets/
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
