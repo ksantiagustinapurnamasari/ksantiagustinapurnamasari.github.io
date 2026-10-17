@@ -111,7 +111,7 @@ h1 { font-weight:600; font-size:clamp(36px,4.2vw,56px); letter-spacing:-.045em; 
 .contact-link-arrow { align-self:flex-end; margin-top:6px; color:#a8c7ff; font-size:16px; line-height:1; }
 .btn-light { background:#fff; }
 .section-kicker.light { color:#a8c7ff; }
-.site-header { height:76px; flex:none; padding-inline:max(var(--gutter),calc((100% - var(--content-width)) / 2)); gap:24px; background:rgba(255,255,255,.97); box-shadow:none; }
+.site-header { height:76px; flex:none; justify-content:flex-end; padding-inline:max(var(--gutter),calc((100% - var(--content-width)) / 2)); gap:24px; background:rgba(255,255,255,.97); box-shadow:none; }
 .brand { min-width:0; gap:10px; }
 .brand strong { line-height:1.4; }
 .brand-photo { width:40px; height:40px; flex:none; display:block; border-radius:50%; border:1px solid var(--line); object-fit:cover; object-position:center 20%; }
