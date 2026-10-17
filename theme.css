@@ -103,6 +103,12 @@ h1 { font-weight:600; font-size:clamp(36px,4.2vw,56px); letter-spacing:-.045em; 
 .contact h1 { font-weight:500; font-size:clamp(32px,3.6vw,47px); color:#fff; line-height:1.1; margin:0 0 20px; position:relative; z-index:1; }
 .contact h1 em { color:#a8c7ff; }
 .contact-handle { display:inline-flex; align-items:center; gap:8px; margin-top:20px; color:#fff; font-size:13px; font-weight:600; text-decoration:underline; text-decoration-color:#a8c7ff; text-underline-offset:5px; position:relative; z-index:1; }
+.contact-links { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin-top:28px; position:relative; z-index:1; }
+.contact-link { min-width:0; display:flex; flex-direction:column; gap:4px; padding:14px; border:1px solid #ffffff2b; border-radius:8px; background:#ffffff0a; color:#fff; transition:background .2s,border-color .2s,transform .2s; }
+.contact-link:hover { transform:translateY(-2px); border-color:#a8c7ff; background:#ffffff14; }
+.contact-link-label { color:#a8c7ff; font-size:9px; font-weight:700; letter-spacing:.14em; }
+.contact-link-value { overflow-wrap:anywhere; font-size:12px; letter-spacing:-.015em; font-weight:600; line-height:1.45; }
+.contact-link-arrow { align-self:flex-end; margin-top:6px; color:#a8c7ff; font-size:16px; line-height:1; }
 .btn-light { background:#fff; }
 .section-kicker.light { color:#a8c7ff; }
 .site-header { height:76px; flex:none; padding-inline:max(var(--gutter),calc((100% - var(--content-width)) / 2)); gap:24px; background:rgba(255,255,255,.97); box-shadow:none; }
@@ -159,6 +165,10 @@ h1 { font-weight:600; font-size:clamp(36px,4.2vw,56px); letter-spacing:-.045em; 
   .about-copy { padding:22px; }
   .contact-card { padding:28px 22px; }
   .contact h1 { font-size:34px; }
+  .contact-links { grid-template-columns:1fr; gap:8px; margin-top:22px; }
+  .contact-link { display:grid; grid-template-columns:1fr auto; align-items:center; column-gap:12px; }
+  .contact-link-label,.contact-link-value { grid-column:1; }
+  .contact-link-arrow { grid-column:2; grid-row:1 / span 2; margin:0; }
   .contact .btn { margin-top:24px; }
   .btn,.text-link { min-height:44px; }
   .section-kicker { margin-bottom:18px; }
